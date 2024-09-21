@@ -5,9 +5,9 @@ casery = "IQ7amo"
 caserid = 5576431780
 ##قناه السورس
 source = "https://t.me/MGIMT" 
-ch = "EHS4SS" 
+ch = "Bots_Queen" 
 ##جروب السورس
-group = "https://t.me/GroupAlina" 
+group = "https://t.me/bjsjdjjs" 
 ##لوجو السورس
 photosource = "https://telegra.ph/file/79d346793ec3e73d5e9f0.jpg"
 ##توكن الصانع
