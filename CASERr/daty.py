@@ -15,7 +15,7 @@ API_HASH = "8288c5c54f568ee346b3227271700b52"
 
 # Get ur redis url from https://app.redislabs.com/
 r = redis.from_url(
-    'redis://default:VL9ITtuHp4uy7dJclHunfu7mBcix1jbT@redis-12071.c93.us-east-1-3.ec2.redns.redis-cloud.com:12071')
+    'redis://default:7Y5TfjyNwOkPaRc8Bxn5oux1gXJUWM32@redis-18539.c267.us-east-1-4.ec2.redns.redis-cloud.com:18539')
 
 def add_Bots(bots):
     if is_Bots(bots):
