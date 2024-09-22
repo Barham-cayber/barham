@@ -68,7 +68,7 @@ def truncate(text):
     text2 = text2.strip()
     return [text1, text2]
 
-
+cook = "cookies.txt"
 async def gen_bot_caesar(client, bot_username, OWNER_ID, CASER, message, videoid):
     if os.path.isfile(f"photos/{videoid}_{bot_username}.jpg"):
         return f"photos/{videoid}_{bot_username}.jpg"
@@ -293,7 +293,9 @@ async def download(bot_username, link, video: Union[bool, str] = None):
     link = link
     loop = asyncio.get_running_loop()
     def audio_dl():
-        ydl_opts = {"format": "bestaudio/best", "outtmpl": f"Music/{bot_username}/%(id)s.%(ext)s", "geo_bypass": True, "nocheckcertificate": True, "quiet": True, "no_warnings": True}
+        ydl_opts = {"format": "bestaudio/best", "outtmpl": f"Music/{bot_username}/%(id)s.%(ext)s", "geo_bypass": True, "nocheckcertificate": True, "quiet": True, "no_warnings": True
+             "cookiefile": cook,
+        }
         x = yt_dlp.YoutubeDL(ydl_opts)
         info = x.extract_info(link, False)
         xyz = os.path.join(f"Music/{bot_username}/{info['id']}.{info['ext']}")
